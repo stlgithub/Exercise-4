@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sami Lappalainen">
+    <meta name="description" content="A web page I made for my class, exercise 4. Modeled after the Yle webpage.">
+    <meta name="link" content="githubLinkki">
+    <meta charset="UTF-8">
+    <title> Yle / Flex Box - Layout</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+        .wrapper {
+            margin:auto;
+            width: 70%;
+        }
+        .topmenu {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0;
+            background-color:black;
+        }
+        .topmenu > li{
+            list-style:none;
+            padding: 1em;
+            color: white;
+            text-align: left;
+        }
+        .flexgrowcon {
+            display:flex;
+            align-items: stretch;
+        }
+        leftbar,rightbar {
+            background-color:lightcyan;
+            font-weight: bold;
+            max-width: 200px;
+        }
+        footer {
+            background-color: black;
+            color:white;
+            height: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="wrapper">
+        <header>
+        <ul class="topmenu">
+            <img src="images/yle.png" alt="Photo info" height="4%" width="4%"/>
+            <li>Uutiset</li>
+            <li>Areena</li>
+            <li>Urheilu</li>
+            <li>Valikko</li>
+        </ul>
+    </header>
+    <div class ="flexgrowcon">
+        
+        <leftbar style="flex-grow: 1;">
+            <h2>Luetuimmat</h2>
+        <ol>
+            <li>Täydellistä kotia uhkaa purkutuomio – Terttu Aallon yllätyksiä tuottanut talo kärsii myrkystä, jota voi löytyä jopa yli sadasta tuhannesta pientalosta</li> <br>
+            <li>Pääministeri Sanna Marin vaatii, että Venäjällä pidätetty Aleksei Navalnyi vapautetaan välittömästi</li> <br>
+            <li>Muistatko, kun koulun liikuntatunneilla oli opeteltava kymmeniä urheilulajeja? Nyt pakollisia lajeja on enää yksi</li> <br>
+            <li>Oppositiojohtaja Aleksei Navalnyin vangitsemisoikeudenkäynti alkoi Moskovan esikaupungin poliisiasemalla – Navalnyi: Tämä on korkein laittomuuden taso</li> <br>
+            <li>Ihmisiä kävelemässä ja puluja syömässä maassa Kuopion torilla talvella.</li> <br>
+            <li>Kuopion koronaluvut synkkenevät nopeasti: 26 uutta tartuntaa viikonloppuna, satoja karanteenissa – kaikille altistuneille ei edes ehditä soittaa</li>
+        </ol>
+        </leftbar>
+        
+        <content style="flex-grow: 6;background-color:white;">
+            <h1>Oppositiojohtaja Aleksei Navalnyin vangitsemisoikeudenkäynti alkoi Moskovan esikaupungin poliisiasemalla – Navalnyi: Tämä on korkein laittomuuden taso</h1>
+            <h2>Viranomaiset ottivat eilen Berliinistä palanneen Aleksei Navalnyin kiinni Šeremetjevon lentokentällä Moskovassa.</h2>
+            <img src="images/police.jpg" alt="Photo info" width="700px" height="400px" />
+            <p>Sunnuntaina pidätetyn oppositiojohtaja Aleksei Navalnyin vangitsemisoikeudenkäynti on meneillään Moskovan esikaupungissa Himkissä.</p>
+            <p>Viranomaiset pidättivät Navalnyin sunnuntai-iltana Šeremetjevon lentokentällä, kun tämä palasi Berliinistä. Navalnyi oli Berliinissä viime elokuusta, jolloin hänet lennätettiin Venäjältä berliiniläiseen sairaalaan hoitoon myrkytysyrityksen jälkeen.</p>
+            <p>Tviitin mukaan oikeudenkäynti alkoi 12.30 Moskovan aikaa eli 11.30 Suomen aikaa. Oikeudenkäynnissä käsitellään Venäjän rikosseuraamusviraston FSIN:n vaatimusta Navalnyin asettamisesta esitutkintavankeuteen.</p>
+            <p>Venäjän rikosseuraamusvirasto FSIN syyttää, että Navalnyi olisi rikkonut aiemman ehdonalaisen tuomionsa ehtoja.</p>
+            <p>Navalnyi sai ehdollisen petostuomion vuonna 2014. Hän sanoo, että tuomio oli poliittinen. Euroopan ihmisoikeustuomioistuin piti vuonna 2017 antamassaan päätöksessä tuomiota perusteettomana, mutta Venäjä on pitänyt sen voimassa.</p>
+            <p>Lisäksi Venäjän viranomaiset ovat aloittaneet rikostutkinnan, jossa Navalnyin syytetään kavaltaneen korruptionvastaisen säätiönsä saamia lahjoituksia.</p>
+            <p>Navalnyista on tullut johtava Kremlin kriitikko Venäjällä, ja hänen korruptiopaljastuksensa ovat aiheuttaneet harmia Venäjän johtohahmoille, muun muassa entiselle pääministerille Dmitri Medvedeville.</p>
+        </content>
+
+    </div>
+
+    <footer>
+        <h3>Yle yhtinönä &nbsp Tietosuojalauseke &nbsp Saavutettavuus &nbsp Avoimet työpaikat &nbsp Vastaavat toimittajat &nbsp Yhteystiedot &nbsp Svenska Yle</h3>
+    </footer>
+
+    </div>
+    
+</body>
+</html>
