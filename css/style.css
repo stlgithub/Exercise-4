@@ -1,0 +1,34 @@
+body {
+    background-color: cornflowerblue;
+}
+.wrapper {
+    margin:auto;
+    width: 70%;
+}
+.topmenu {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    background-color:black;
+}
+.topmenu > li{
+    list-style:none;
+    padding: 1em;
+    color: white;
+    text-align: left;
+}
+.flexgrowcon {
+    display:flex;
+    align-items: stretch;
+}
+leftbar,rightbar {
+    background-color:lightcyan;
+    font-weight: bold;
+    max-width: 200px;
+}
+footer {
+    background-color: black;
+    color:white;
+    height: 40px;
+    text-align: center;
+}

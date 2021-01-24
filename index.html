@@ -3,50 +3,15 @@
 <head>
     <meta name="author" content="Sami Lappalainen">
     <meta name="description" content="A web page I made for my class, exercise 4. Modeled after the Yle webpage.">
-    <meta name="link" content="githubLinkki">
+    <meta name="link" content="https://stlgithub.github.io/Exercise-4/">
     <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title> Yle / Flex Box - Layout</title>
-    <style>
-        body {
-            background-color: cornflowerblue;
-        }
-        .wrapper {
-            margin:auto;
-            width: 70%;
-        }
-        .topmenu {
-            display: flex;
-            flex-flow: row wrap;
-            margin: 0;
-            background-color:black;
-        }
-        .topmenu > li{
-            list-style:none;
-            padding: 1em;
-            color: white;
-            text-align: left;
-        }
-        .flexgrowcon {
-            display:flex;
-            align-items: stretch;
-        }
-        leftbar,rightbar {
-            background-color:lightcyan;
-            font-weight: bold;
-            max-width: 200px;
-        }
-        footer {
-            background-color: black;
-            color:white;
-            height: 40px;
-            text-align: center;
-        }
-
-    </style>
 </head>
 <body> 
     <div class="wrapper">
         <header>
+            <nav>
         <ul class="topmenu">
             <img src="images/yle.png" alt="Photo info" height="4%" width="4%"/>
             <li>Uutiset</li>
@@ -54,6 +19,7 @@
             <li>Urheilu</li>
             <li>Valikko</li>
         </ul>
+    </nav>
     </header>
     <div class ="flexgrowcon">
         
