@@ -32,3 +32,12 @@ footer {
     height: 40px;
     text-align: center;
 }
+a {
+    color: white;
+}
+a:visited {
+    color:blue
+}
+a:hover {
+    color:green
+}
