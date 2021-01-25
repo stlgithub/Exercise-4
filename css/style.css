@@ -33,10 +33,11 @@ footer {
     text-align: center;
 }
 a:link {
+    text-decoration: none;
     color: white;
 }
 a:visited {
-    color:blue
+    color:white
 }
 a:hover {
     color:green
