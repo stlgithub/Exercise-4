@@ -32,7 +32,7 @@ footer {
     height: 40px;
     text-align: center;
 }
-a {
+a:link {
     color: white;
 }
 a:visited {
